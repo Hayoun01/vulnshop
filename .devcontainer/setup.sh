@@ -23,8 +23,8 @@ curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sudo
 curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sudo sh -s -- -b "$BIN"
 
 echo "==> pre-commit et dépendances de l'application"
-pip install --quiet pre-commit
-pip install --quiet -r requirements.txt
+# --break-system-packages : nécessaire si l'image de base marque Python comme "externally managed" (PEP 668).
+python3 -m pip install --break-system-packages --quiet pre-commit -r requirements.txt
 
 rm -rf "$TMP"
 echo "Outils prêts : gitleaks, cosign, syft, grype, pre-commit"

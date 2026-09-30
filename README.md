@@ -5,10 +5,10 @@ uniquement. C'est l'application de démo de la formation : on l'analyse, on la s
 construit un pipeline sécurisé.
 
 ## 1. Créer votre copie
-1. En haut de cette page : **Use this template → Create a new repository**.
-2. Nom : `vulnshop`, visibilité : **Public** (GitHub Actions est gratuit sur les dépôts publics).
-3. Sur **votre** copie : **Code → Codespaces → Create codespace**.
-4. Attendez la fin de l'installation (quelques minutes) : Gitleaks, Syft, Grype, cosign et pre-commit sont prêts.
+1. En haut à droite de cette page : bouton **Fork → Create fork** (gardez le dépôt **public**).
+   Le fork copie **tout l'historique** du dépôt — indispensable pour le lab de chasse aux secrets.
+2. Sur **votre** fork : **Code → Codespaces → Create codespace**.
+3. Attendez la fin de l'installation (quelques minutes) : Gitleaks, Syft, Grype, cosign et pre-commit sont prêts.
 
 ## 2. Contenu
 | Fichier | Rôle |

@@ -5,3 +5,8 @@ venv/
 *.sbom.json
 sbom.json
 .pytest_cache/
+
+# Lab SBOM : ne JAMAIS committer la clé privée ni les artefacts cosign
+cosign.key
+cosign.pub
+*.sig
